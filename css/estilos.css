@@ -1,0 +1,30 @@
+:root{
+--bg:#07070b;
+--card:#0f0f15;
+--accent:#6d00ff;
+--muted:#9aa0b0;
+--glass: rgba(255,255,255,0.02);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Orbitron',sans-serif;background:var(--bg);color:#e6e6e6}
+.container{max-width:1060px;margin:0 auto;padding:24px}
+.site-header{border-bottom:1px solid rgba(255,255,255,0.03);padding:18px 0}
+.site-header h1{margin:0;color:var(--accent)}
+.site-header nav{margin-top:8px}
+.site-header nav a{color:var(--muted);margin-right:16px;text-decoration:none}
+.hero{padding:60px 24px;text-align:center}
+.hero h2{font-size:28px;margin:0 0 8px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.proyectos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(109,0,255,0.08);box-shadow:0 6px 18px rgba(15,0,40,0.6)}
+.card h3{margin:0 0 6px;color:var(--accent)}
+.card p{color:var(--muted);margin:0 0 12px}
+.card-actions{display:flex;gap:10px}
+.detalle{padding:28px}
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:18px;text-align:center;margin-top:30px}
+.nota{color:var(--muted);font-size:13px;margin-top:18px}
+
+
+/* Responsive */
+@media (max-width:640px){.hero h2{font-size:20px}}
